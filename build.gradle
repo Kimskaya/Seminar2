@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.wso2.orbit.com.googlecode.json-simple:json-simple:1.1.1.wso2v1'
+    implementation 'org.json:org.json:chargebee-1.0'
+    compileOnly 'org.projectlombok:lombok:1.18.26'
+    implementation 'org.json:json:20230227'
+    implementation 'com.github.lbovolini:ObjectMapper:0.2.3'
+    implementation 'org.json:json:20230227'
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'org.springframework:spring-web:4.1.0.RELEASE'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+}
+
+test {
+    useJUnitPlatform()
+}
