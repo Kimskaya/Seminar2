@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 public class taks3calculatorlog {
-    private static Logger logger = Logger.getLogger(taks3calculatorlog.class.getName());
+    private static Logger logger = Logg.log(taks3calculatorlog.class.getName());
     public static void main(String[] args) {
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("Введите первое число ");
