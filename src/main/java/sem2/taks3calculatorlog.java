@@ -6,8 +6,6 @@ import java.util.logging.Logger;
 public class taks3calculatorlog {
     private static Logger logger = Logger.getLogger(taks3calculatorlog.class.getName());
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Введите первое число ");
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("Введите первое число ");
         int number1 = scanner3.nextInt();
@@ -40,7 +38,7 @@ public class taks3calculatorlog {
             if (operator != '-' && operator !='+' && operator != '/' && operator != '*') {
             System.out.println("Вы ввели не коректный оператор ");
             }
-            sc.close();
+        scanner3.close();
         }
     }
 
